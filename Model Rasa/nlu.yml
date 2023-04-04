@@ -1,0 +1,747 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - fine
+    - okay
+    - cool
+    - thank you
+    
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: soil_wheat
+  examples: |
+    - which soil is suitable for wheat?
+    - wheat in which soil?
+    - soil for wheat?
+    - wheat is grown in which soil?
+    - soil wheat?
+    - soil for wheat production?
+    - which soil is used in wheat production?
+    - wheat soil?
+    - which soil i can use for wheat production?
+
+- intent: soil_ginger
+  examples: |
+    - which soil is suitable for ginger?
+    - ginger in which soil?
+    - soil for ginger?
+    - ginger is grown in which soil?
+    - soil ginger?
+    - soil for ginger production?
+    - which soil is used in ginger production?
+    - ginger soil?
+    - which soil i can use for ginger production?
+
+- intent: soil_potato
+  examples: |
+    - which soil is suitable for potato?
+    - potato in which soil?
+    - soil for potato?
+    - potato is grown in which soil?
+    - soil potato?
+    - soil for potato production?
+    - which soil is used in potato production?
+    - potato soil?
+    - which soil i can use for potato production?
+
+- intent: soil_cabbage
+  examples: |
+    - which soil is suitable for cabbage?
+    - cabbage in which soil?
+    - soil for cabbage?
+    - cabbage is grown in which soil?
+    - soil cabbage?
+    - soil for cabbage production?
+    - which soil is used in cabbage production?
+    - cabbage soil?
+    - which soil i can use for cabbage production?
+
+- intent: nutri_old_alluvial
+  examples: |
+    - what are the nutrients found in Old Alluvial soil of west bengal (WB)?
+    - nutrients in Old alluvial soil of west bengal
+    - what are there in old alluvial soil of west bengal?
+    - alluvial soil west bengal nutrients
+    - old alluvial soil west bengal
+    - old alluvial soil west bengal (WB) nutrients
+    - nutrients that can be found in old alluvial soil of west bengal(WB)?
+    - old alluvial soil nutrients in west bengal (WB) 
+    - west bengal(WB) has which nutrients in old alluvial soil
+  
+- intent: eng_khadar_bhangar
+  examples: |
+    - khadar and bhangar soil
+    - bhangar and khadar soil
+    - what are bhangar and khadar soil?
+    - What are Khadar and Bhangar soil?
+    - khadar and bhangar soil of west bengal
+    - bhangar and khadar soil of west bengal
+    - What are Khadar and Bhangar soil called in English?
+    - English names of bhangar and khadar soil
+    - English names of khadar and bhangar soil
+
+- intent: soil_tea
+  examples: |
+    - Which region of West Bengal has soil suitable for tea cultivation?
+    - where West bengal(wb) has best soil for tea
+    - west bengal(wb) place best soil for tea growth?
+    - best soil for tea growth in west bengal
+    - where in west bengal(wb) should we grow tea
+    - best place for tea farming in west bengal(wb)
+    - where to grow good tea in west bengal
+    - tea grow in west bengal(wb) best place?
+    - west bengal(wb) area good for tea growth
+
+- intent: char_khadar
+  examples: |
+    - What are the characteristics of Khadar soil?
+    - khadar soil characteristics
+    - properties of khadar soil?
+    - speciality of khadar soil
+    - khadar soil properties
+    - why khadar soil is so special?
+    - features of khadar soil
+    - what are the features of khadar soil
+    - khadar soil features
+
+- intent: char_bhangar
+  examples: |
+    - What are the characteristics of Bhangar soil?
+    - bhangar soil characteristics
+    - features of bhangar soil
+    - what are there in bhangar soil
+    - why bhangar soil is special
+    - properties of bhangar soil?
+    - bhangar soil properties
+    - what are the features of bhangar soil
+    - bhangar soil features
+
+- intent: soil_red
+  examples: |
+    - Where is Red Soil found in West Bengal?
+    - Regions of West Bengal(WB) where red soil can be found
+    - west bengal(wb) regions/places for red soil
+    - red soil in west bengal
+    - where we can see red soil in west bengal?
+    - red soil can be found in which places of west bengal(wb)
+    - west bengal red soil
+    - red soil location/places in west bengal(wb)
+    - where does west bengal(wb) have red soil
+    
+- intent: soil_delta
+  examples: |
+    - Which soil is found in Delta regions of West Bengal(wb)
+    - west bengal(wb) delta region soil name
+    - name of soil in west bengal(wb) delta region
+    - soil of west bengal delta region
+    - delta region of west bengal soil
+    - soil present in delta regions of west bengal(wb)
+    - which soil can I find in delta region of west bengal(wb)
+    - delta west bengal soil
+    - delta region of west bengal(wb) contains what soil
+
+- intent: def_soil_red
+  examples: |
+    - Deficits of Red soil?
+    - What are the drawbacks/deficits of red soil?
+    - negatives of red soil
+    - disadvantages of farming in red soil
+    - red soil bad sides
+    - why not to use red soil
+    - why farming is difficult in red soil
+    - problems of cultivating in red soil
+    - problems that might occur while using red soil
+
+- intent: soil_clayey
+  examples: |
+    - Where is Clayey Saline soil found in West Bengal?
+    - Clayey soil location/places in west bengal(wb)
+    - places/locations in west bengal(wb) having clayey saline soil
+    - regions of West Bengal(WB) where clayey saline soil can be found
+    - where one can find clayey saline soil in west bengal
+    - where does west bengal(wb) have clayey saline soil
+    - where we can see clayey soil in west bengal
+    - clayey soil in west bengal
+    - west bengal(wb) regions/places/locations for clayey saline soil
+
+- intent: soil_laterite
+  examples: |
+    - Where is laterite Saline soil found in West Bengal?
+    - laterite soil location/places in west bengal(wb)
+    - places/locations in west bengal(wb) having laterite soil
+    - where one can find laterite soil in west bengal
+    - regions of West Bengal(WB) where laterite soil can be found
+    - laterite soil in west bengal
+    - laterite soil in west bengal region 
+    - where does west bengal(wb) have laterite soil
+    - west bengal(wb) regions/places/locations for laterite soil
+
+- intent: nutri_red_soil
+  examples: |
+    - Nutrients mainly found in Red soil?
+    - nutrients in red soil
+    - red soil have nutrients
+    - nutrients of red soil
+    - what red soil have?
+    - red soil nutrients
+    - what are there in red soil
+    - nutrients present in red soil?
+    - red soil has/contains which nutrients
+
+- intent: condi_wheat
+  examples: |
+    - Which set of conditions is necessary for a good cultivation of wheat?
+    - conditions good for cultivation of wheat
+    - wheat farming suitable/best conditions
+    - conditions for wheat farming
+    - what is the best weather condition for wheat farming?
+    - best weather for wheat farming
+    - good farming conditions for wheat
+    - which conditions are best for farming wheat
+    - good weather/climate for wheat farming
+
+- intent: crop_bankura
+  examples: |
+    - Field Crops in Bankura
+    - Bankura field crops
+    - Bakura has field crops?
+    - field Crops which are grown in Bankura
+    - which are the field crops that grow in bankura?
+    - field crops bankura
+    - what are the field crops available in bankura?
+    - field Crops that grow in Bankura
+    - which field crops grow in bankura?
+
+- intent: crop_sunderbans
+  examples: |
+    - Crops in Sunderbans
+    - Sunderbans crops
+    - Sunderbans has crops?
+    - Crops which are grown in Sunderbans
+    - which are the crops that grow in Sunderbans?
+    - crops Sunderbans
+    - what are the crops available in sunderbans?
+    - Crops that grow in sunderbans
+    - which crops grow in sunderbans?
+
+- intent: crop_red_soil
+  examples: |
+    - Crops in Red Soil
+    - Red Soil crops
+    - red soil has crops?
+    - Crops which are grown in red soil
+    - which are the crops that grow in red soil?
+    - crops red soil
+    - what are the crops available in red soil?
+    - Crops that grow in red soil
+    - which crops grow in red soil?
+
+- intent: var_ginger
+  examples: |
+    - Which varities of ginger are grown in West Bengal (WB)?
+    - what are the different types of gingers found in west bengal
+    - west bengal ginger
+    - Types of ginger grown in West Bengal (WB)
+    - ginger varities in West Bengal (WB)
+    - ginger types in West Bengal (WB)
+    - West Bengal (WB) ginger types
+    - West Bengal (WB) ginger forms
+    - Forms of ginger grown in West Bengal (WB)
+
+- intent: mustard_bengal
+  examples: |
+    - Which varities of mustard are grown in West Bengal (WB)?
+    - what are the different types of mustard found in west bengal
+    - west bengal mustard
+    - Types of mustard grown in West Bengal (WB)
+    - mustard varities in West Bengal (WB)
+    - mustard types in West Bengal (WB)
+    - West Bengal (WB) mustard types
+    - West Bengal (WB) mustard forms
+    - Forms of mustard grown in West Bengal (WB)
+
+- intent: ginger_bengal
+  examples: |
+    - Which variety of ginger is best suited for fresh and dry ginger?
+    - ginger type/variety best for fresh and dry ginger
+    - which ginger farming for best fresh and dry ginger
+    - what ginger variety results in fresh and dry ginger
+    - ginger variety best for dry and fresh ginger
+    - for fresh and dry ginger which type of ginger best
+    - best ginger for getting fresh and dry ginger?
+    - what ginger variety I can use for dry and fresh ginger
+    - what ginger variety should I use if I want fresh and dry ginger
+
+- intent: jute_bengal
+  examples: |
+    - Which districts of West Bengal have largest Jute productions?
+    - West bengal districts having best jute productions
+    - districts of west bengal(wb) best for farming jute
+    - in which districts of west bengal i can do jute farming?
+    - which districts have most jute production?
+    - best districts in west bengal for jute farming
+    - jute farming west bengal(wb) best districts
+    - if i want to cultivate jute in west bengal(wb), which districts are best
+    - best districts for farming jute in west bengal(wb)
+
+- intent: climate_jute
+  examples: |
+    - Which climate is best for jute
+    - Suitable climate for jute
+    - Best climate for jute
+    - optimum climate for jute
+    - climate for jute
+    - jute climate
+    - Which climate should jute be grown in
+    - climate jute
+    - jute should be grown in which climate
+
+- intent: climate_wheat
+  examples: |
+    - Which climate is best for wheat
+    - Suitable climate for wheat
+    - Best climate for wheat
+    - optimum climate for wheat
+    - climate for wheat
+    - wheat climate
+    - Which climate should wheat be grown in
+    - climate wheat
+    - wheat should be grown in which climate
+
+- intent: dryland_rainfall
+  examples: |
+    - Dry land farming in India is largely confined to areas with rainfall less than
+    - How much rain is needed for dry land farming in india
+    - dry land farming ideal rainfall
+    - ideal rainfall farming in dry land
+    - ideal rainfall for dry land farming 
+    - what is the maximum rainfall for dry land farming?
+    - maximum rain suitable for dry land farming in India
+    - rainfall limit for dry land farming
+    - dry land farming in India suitable rain limit
+
+- intent: season_ginger
+  examples: |
+    - Which climate is best for ginger
+    - Suitable climate for ginger
+    - Best climate for ginger
+    - optimum climate for ginger
+    - climate for ginger
+    - ginger climate
+    - Which climate should ginger be grown in
+    - climate ginger
+    - ginger should be grown in which climate
+    
+- intent: climate_potato
+  examples: |
+    - Which climate is best for potatoes
+    - Suitable climate for potatoes
+    - Best climate for potatoes
+    - optimum climate for potatoes
+    - climate for potatoes
+    - potatoes climate
+    - Which climate should potatoes be grown in
+    - climate potatoes
+    - potatoes should be grown in which climate
+
+- intent: climate_tea
+  examples: |
+    - Which climate is best for tea
+    - Suitable climate for tea
+    - Best climate for tea
+    - optimum climate for tea
+    - climate for tea
+    - tea climate
+    - Which climate should tea be grown in
+    - climate tea
+    - tea should be grown in which climate
+
+- intent: temp_tea
+  examples: |
+    - Temperature range required for tea cultivation in Darjeeling?
+    - best temperature for Darjeeling tea farming
+    - tea growing in Darjeeling temperature
+    - darjeeling tea ideal temperature 
+    - most suitable temperature for tea cultivation in darjeeling
+    - optimum temperature for growing Darjeeling tea
+    - ideal temperature for darjeeling tea cultivation
+    - tea growing good temperature Darjeeling
+    - darjeeling tea good temperature
+
+- intent: preserve_soil
+  examples: |
+    - How do you preserve soil fertility
+    - Measures to preserve soil fertility
+    - soil fertility preserving measures
+    - How to maintain soil fertility
+    - maintain soil fertility
+    - How to keep the soil fertile
+    - What measures to be taken to preserve/maintain soil fertility
+    - preserve soil fertility
+    - ways to maintain the soil fertility
+
+- intent: kotar_spot_turnip
+  examples: |
+    - koter spot disease of turnip
+    - what causes koter spot disease of turnip
+    - koter spot disease turnip
+    - Deficiency of which nutrient causes Koter spot disease of turnip?
+    - What is the reason behind Kotor spot disease in Turnip
+    - my turnip has kotor spot disease, why?
+    - why kotor spot disease in my turnip
+    - what leads to kotor spot disease in turnip
+    - turnip kotor spot disease caused by
+
+- intent: fert_acc_seed
+  examples: |
+    - Most suitable fertilizer for accelerating seeding in later stages of plant growth?
+    - which ferilizer to use for seeding at later stage
+    - best fertilizer seeding
+    - which fertilizer I should buy for seeding at later stages
+    - most suitable fertilizer for seeding at later stages
+    - fertilizer for seeding later
+    - best seeding fertilizer
+    - best fertilizer for seeding
+    - fertilizer for better seeding in plant's later growth stages
+
+- intent: fert_paddy
+  examples: |
+    - What is the best fertilizer for paddy?
+    - suitable fertilizer for paddy
+    - fertilizer required for paddy
+    - which fertilizer should I use for paddy
+    - best fertilizer for padddy
+    - fertilizer for paddy farming
+    - fertilizer paddy
+    - paddy fertilizer
+    - most suitable fertilizer for growth of paddy
+
+- intent: fert_nitrogen
+  examples: |
+    - What nitrogenous Fertilizer has the highest percentage of Nitrogen?
+    - greatest nitrogen percentage which fertilizer
+    - which fertilizer with highest nitrogen percentage
+    - nitrogen percentage highest in which fertilizer
+    - percentage of nitrogen largest in which fertilizer
+    - nitrogen fertilizer
+    - fertilizer for nitrogen
+    - fertilizer for getting best nitrogen
+    - fertilizer best for geting high percentage of nitrogen
+
+- intent: fert_phosphatic
+  examples: |
+    - Who is the leading phosphatic fertilizer manufacturer in India?
+    - biggest phosphatic fertilizer manufacturer in india
+    - biggest indian manufacturer of phosphatic fertilizer
+    - which company's phosphate fertilizer is in greatest demand in india
+    - in india which company has highest sales of phosphate fertilizer
+    - which phosphate fertilizer to buy?
+    - best phosphate fertilizer to buy in india
+    - best phosphate fertilizer in india
+    - best company for buying phosphate fertilizer in India
+
+- intent: fert_phosphafert_touse
+  examples: |
+    - In case fertilisers are applied, which kinds do you use?
+    - what are the different types of fertilizers used in farming
+    - fertilizers for farming
+    - farming fertilizer to use
+    - what fertilizers i can use?
+    - what are the fertilizers to use?
+    - fertilizer types needed for farming
+    - farming fertilizer types
+    - varities of fertilizer for farming
+
+- intent: fert_organic
+  examples: |
+    - In case organic fertilisers are used, can you specify the type you use?
+    - what are the different types of organic fertilizers used in farming
+    - organic fertilizer types needed for farming
+    - farming organic fertilizer types
+    - examples of organic fertilizer
+    - examples of fertilizer organic
+    - organic fertilizer examples
+    - organic fertilizer
+    - varieties of organic fertilizer
+
+- intent: green_manure
+  examples: |
+    - What is Green Manure?
+    - use of green manure
+    - purpose of green manure
+    - green manure's use
+    - green manure?
+    - why to use green manure?
+    - how green manure is useful?
+    - use green manure
+    - advantage of green manure
+
+- intent: fert_rabi
+  examples: |
+    - What is the best fertilizer for maize(rabi)?
+    - suitable fertilizer for maize(rabi)?
+    - fertilizer required for maize(rabi)
+    - which fertilizer should I use for maize(rabi)
+    - best fertilizer for maize(rabi)
+    - fertilizer for maize(rabi) farming
+    - fertilizer maize(rabi)
+    - maize(rabi) fertilizer
+    - most suitable fertilizer for growth of maize(rabi)
+
+- intent: fert_lentil
+  examples: |
+    - What is the best fertilizer for lentil?
+    - suitable fertilizer for lentil
+    - fertilizer required for lentil
+    - which fertilizer should I use for lentil
+    - best fertilizer for lentil
+    - fertilizer for lentil farming
+    - fertilizer lentil
+    - lentil fertilizer
+    - most suitable fertilizer for growth of lentil
+
+- intent: fert_rapeseed
+  examples: |
+    - What is the best fertilizer for rapeseed-mustard?
+    - suitable fertilizer for rapeseed-mustard
+    - fertilizer required for rapeseed-mustard
+    - which fertilizer should I use for rapeseed-mustard
+    - best fertilizer for rapeseed-mustard
+    - fertilizer for rpaeseed-mustard farming
+    - fertilizer rapeseed-mustard
+    - rapeseed-mustard fertilizer
+    - most suitable fertilizer for growth of rapeseed-mustard
+
+- intent: fert_summer_gram
+  examples: |
+    - What is the best fertilizer for greengram?
+    - suitable fertilizer for greengram
+    - fertilizer required for greengram
+    - which fertilizer should I use for greengram
+    - best fertilizer for greengram
+    - fertilizer for greengram farming
+    - fertilizer greengram
+    - greengram fertilizer
+    - most suitable fertilizer for growth of greengram
+
+- intent: season_urd
+  examples: |
+    - Which season is best for blackgram
+    - Suitable season for blackgram/urd
+    - Best season for blackgram/urd
+    - optimum season for blackgram/urd
+    - season for blackgram/urd
+    - blackgram/urd season
+    - Which season should blackgram/urd be grown in
+    - season blackgram/urd
+    - blackgram/urd should be grown in which season
+
+- intent: season_gram
+  examples: |
+    - Which season is best for gram
+    - Suitable season for gram
+    - Best season for gram
+    - optimum season for gram
+    - season for gram
+    - gram season
+    - Which season should gram be grown in
+    - season gram
+    - gram should be grown in which season
+
+- intent: season_gram_harvest
+  examples: |
+    - Which season is best for greengram harvesting
+    - Suitable season for greengram harvesting
+    - Best season for greengram harvesting
+    - optimum season for greengram harvesting
+    - season for greengram harvesting
+    - greengram harvesting season
+    - Which season should greengram be harvested in
+    - season greengram harvesting
+    - greengram should be harvested in which season
+
+- intent: season_gram_sow
+  examples: |
+    - Which season is best for greengram sowing
+    - Suitable season for greengram sowing
+    - Best season for greengram sowing
+    - optimum season for greengram sowing
+    - season for greengram sowing
+    - greengram sowing season
+    - Which season should greengram be sown in
+    - season greengram sowing
+    - greengram should be sown in which season
+
+- intent: season_lentil_sow
+  examples: |
+    - Which season is best for masur/lentil sowing
+    - Suitable season for masur/lentil sowing
+    - Best season for masur/lentil sowing
+    - optimum season for masur/lentil sowing
+    - season for masur/lentil sowing
+    - masur/lentil sowing season
+    - Which season should masur/lentil be sown in
+    - season masur/lentil sowing
+    - masur/lentil should be sown in which season
+
+- intent: season_lentil_harvest
+  examples: |
+    - Which season is best for masur/lentil harvesting
+    - Suitable season for masur/lentil harvesting
+    - Best season for masur/lentil harvesting
+    - optimum season for masur/lentil harvesting
+    - season for masur/lentil harvesting
+    - masur/lentil harvesting season
+    - Which season should masur/lentil be harvested in
+    - season masur/lentil harvesting
+    - masur/lentil should be harvested in which season
+
+- intent: season_rice_sow
+  examples: |
+    - Which season is best for rice/paddy sowing
+    - Suitable season for rice/paddy sowing
+    - Best season for rice/paddy sowing
+    - optimum season for rice/paddy sowing
+    - season for rice/paddy sowing
+    - rice/paddy sowing season
+    - Which season should rice/paddy be sown in
+    - season rice/paddy sowing
+    - rice/paddy should be sown in which season
+
+- intent: season_rice_harvest
+  examples: |
+    - Which season is best for rice/paddy harvesting
+    - Suitable season for rice/paddy harvesting
+    - Best season for rice/paddy harvesting
+    - optimum season for rice/paddy harvesting
+    - season for rice/paddy harvesting
+    - rice/paddy harvesting season
+    - Which season should rice/paddy be harvested in
+    - season rice/paddy harvesting
+    - rice/paddy should be harvested in which season
+
+- intent: crop_alipurduar
+  examples: |
+    - Field crops in Alipurduar
+    - Alipurduar field crops
+    - Alipurduar has field crops?
+    - Field crops which are grown in Alipurduar
+    - which are the field crops that grow in Alipurduar?
+    - field crops Alipurduar
+    - what are the field crops available in Alipurduar?
+    - field crops that grow in Alipurduar
+    - which field crops grow in Alipurduar?
+
+- intent: fruit_alipurduar
+  examples: |
+    - Fruits in Alipurduar
+    - Alipurduar fruits
+    - Alipurduar has fruits?
+    - Fruits which are grown in Alipurduar
+    - which are the fruits that grow in Alipurduar?
+    - fruits Alipurduar
+    - what are the fruits available in Alipurduar?
+    - fruits that grow in Alipurduar
+    - which fruits grow in Alipurduar?
+    
+- intent: veg_alipurduar
+  examples: |
+    - Vegetables in Alipurduar
+    - Alipurduar vegetables
+    - Alipurduar has vegetables?
+    - vegetables which are grown in Alipurduar
+    - which are the vegetables that grow in Alipurduar?
+    - vegetables Alipurduar
+    - what are the vegetables available in Alipurduar?
+    - vegetables that grow in Alipurduar
+    - which vegetables grow in Alipurduar?
+
+- intent: aroma_alipurduar
+  examples: |
+    - medicinal and aromatic crops in Alipurduar
+    - Alipurduar medicinal and aromatic crops
+    - Alipurduar has medicinal and aromatic crops?
+    - medicinal and aromatic crops which are grown in Alipurduar
+    - which are the medicinal and aromatic crops that grow in Alipurduar?
+    - medicinal and aromatic crops Alipurduar
+    - what are the medicinal and aromatic crops available in Alipurduar?
+    - medicinal and aromatic crops that grow in Alipurduar
+    - which medicinal and aromatic crops grow in Alipurduar?
+
+- intent: fruit_bankura
+  examples: |
+    - fruits in Bankura
+    - Bankura fruits
+    - Bankura has fruits?
+    - fruits which are grown in Bankura
+    - which are the fruits that grow in Bankura?
+    - fruits Bankura
+    - what are the fruits available in Bankura?
+    - fruits that grow in Bankura?
+    - which fruits grow in Bankura?
+
+- intent: veg_bankura
+  examples: |
+    - Vegetables in Bankura
+    - Bankura vegetables
+    - Bankura has vegetables?
+    - vegetables which are grown in Bankura
+    - which are the vegetables that grow in Bankura?
+    - vegetables Bankura
+    - what are the vegetables available in Bankura?
+    - vegetables that grow in Bankura
+    - vegetables that grow in Bankura
+

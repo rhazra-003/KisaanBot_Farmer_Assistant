@@ -1,0 +1,1151 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: soil_wheat path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_wheat
+  - action: utter_soil_wheat
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: soil_wheat path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_wheat
+  - action: utter_soil_wheat
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: soil_ginger path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_ginger
+  - action: utter_soil_ginger
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: soil_ginger path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_ginger
+  - action: utter_soil_ginger
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+  
+- story: soil_potato path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_potato
+  - action: utter_soil_potato
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: soil_potato path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_potato
+  - action: utter_soil_potato
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: soil_cabbage path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_cabbage
+  - action: utter_soil_cabbage
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: soil_cabbage path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_cabbage
+  - action: utter_soil_cabbage
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more 
+  
+- story: nutri_old_alluvial path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nutri_old_alluvial
+  - action: utter_nutri_old_alluvial
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: nutri_old_alluvial path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nutri_old_alluvial
+  - action: utter_nutri_old_alluvial
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more   
+  
+- story: eng_khadar_bhangar path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: eng_khadar_bhangar
+  - action: utter_eng_khadar_bhangar
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: eng_khadar_bhangar path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: eng_khadar_bhangar
+  - action: utter_eng_khadar_bhangar
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more 
+  
+- story: soil_tea path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_tea
+  - action: utter_soil_tea
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: soil_tea path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_tea
+  - action: utter_soil_tea
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more   
+  
+- story: char_khadar path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: char_khadar
+  - action: utter_char_khadar
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: char_khadar path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: char_khadar
+  - action: utter_char_khadar
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more     
+  
+- story: char_bhangar path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: char_bhangar
+  - action: utter_char_bhangar
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: char_bhangar path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: char_bhangar
+  - action: utter_char_bhangar
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: soil_red path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_red
+  - action: utter_soil_red
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: soil_red path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_red
+  - action: utter_soil_red
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more    
+  
+- story: soil_delta path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_delta
+  - action: utter_soil_delta
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: soil_delta path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_delta
+  - action: utter_soil_delta
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: def_soil_red path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: def_soil_red
+  - action: utter_def_soil_red
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: def_soil_red path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: def_soil_red
+  - action: utter_def_soil_red
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: soil_clayey path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_clayey
+  - action: utter_soil_clayey
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: soil_clayey path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_clayey
+  - action: utter_soil_clayey
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: soil_laterite path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_laterite
+  - action: utter_soil_laterite
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: soil_laterite path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: soil_laterite
+  - action: utter_soil_laterite
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: nutri_red_soil path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nutri_red_soil
+  - action: utter_nutri_red_soil
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: nutri_red_soil path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nutri_red_soil
+  - action: utter_nutri_red_soil
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: condi_wheat path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: condi_wheat
+  - action: utter_condi_wheat
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: condi_wheat path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: condi_wheat
+  - action: utter_condi_wheat
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more   
+  
+- story: crop_bankura path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: crop_bankura
+  - action: utter_crop_bankura
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: crop_bankura path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: crop_bankura
+  - action: utter_crop_bankura
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more   
+  
+- story: fruit_bankura path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fruit_bankura
+  - action: utter_fruit_bankura
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: fruit_bankura path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fruit_bankura
+  - action: utter_fruit_bankura
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more     
+  
+- story: veg_bankura path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: veg_bankura
+  - action: utter_veg_bankura
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: veg_bankura path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: veg_bankura
+  - action: utter_veg_bankura
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+ 
+- story: ginger_bengal path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ginger_bengal
+  - action: utter_ginger_bengal
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: ginger_bengal path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ginger_bengal
+  - action: utter_ginger_bengal
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: mustard_bengal path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mustard_bengal
+  - action: utter_mustard_bengal
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: mustard_bengal path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mustard_bengal
+  - action: utter_mustard_bengal
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: var_ginger path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: var_ginger
+  - action: utter_var_ginger
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: var_ginger path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: var_ginger
+  - action: utter_var_ginger
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+
+- story: crop_sunderbans path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: crop_sunderbans
+  - action: utter_crop_sunderbans
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: crop_sunderbans path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: crop_sunderbans
+  - action: utter_crop_sunderbans
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: crop_red_soil path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: crop_red_soil
+  - action: utter_crop_red_soil
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: crop_red_soil path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: crop_red_soil
+  - action: utter_crop_red_soil
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+  
+- story: crop_alipurduar path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: crop_alipurduar
+  - action: utter_crop_alipurduar
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: crop_alipurduar path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: crop_alipurduar
+  - action: utter_crop_alipurduar
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: fruit_alipurduar path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fruit_alipurduar
+  - action: utter_fruit_alipurduar
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: fruit_alipurduar path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fruit_alipurduar
+  - action: utter_fruit_alipurduar
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: veg_alipurduar path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: veg_alipurduar
+  - action: utter_veg_alipurduar
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: veg_alipurduar path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: veg_alipurduar
+  - action: utter_veg_alipurduar
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: aroma_alipurduar path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: aroma_alipurduar
+  - action: utter_aroma_alipurduar
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: aroma_alipurduar path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: aroma_alipurduar
+  - action: utter_aroma_alipurduar
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: jute_bengal path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: jute_bengal
+  - action: utter_jute_bengal
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: jute_bengal path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: jute_bengal
+  - action: utter_jute_bengal
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+ 
+- story: climate_jute path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: climate_jute
+  - action: utter_climate_jute
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: climate_jute path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: climate_jute
+  - action: utter_climate_jute
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more 
+ 
+- story: climate_wheat path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: climate_wheat
+  - action: utter_climate_wheat
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: climate_wheat path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: climate_wheat
+  - action: utter_climate_wheat
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more 
+ 
+- story: dryland_rainfall path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: dryland_rainfall
+  - action: utter_dryland_rainfall
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: dryland_rainfall path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: dryland_rainfall
+  - action: utter_dryland_rainfall
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+ 
+- story: season_ginger path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_ginger
+  - action: utter_season_ginger
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: season_ginger path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_ginger
+  - action: utter_season_ginger
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more   
+ 
+- story: climate_potato path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: climate_potato
+  - action: utter_climate_potato
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: climate_potato path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: climate_potato
+  - action: utter_climate_potato
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+ 
+- story: climate_tea path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: climate_tea
+  - action: utter_climate_tea
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: climate_tea path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: climate_tea
+  - action: utter_climate_tea
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more 
+ 
+- story: temp_tea path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: temp_tea
+  - action: utter_temp_tea
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: temp_tea path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: temp_tea
+  - action: utter_temp_tea
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more 
+  
+- story: season_urd path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_urd
+  - action: utter_season_urd
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: season_urd path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_urd
+  - action: utter_season_urd
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: season_gram path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_gram
+  - action: utter_season_gram
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: season_gram path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_gram
+  - action: utter_season_gram
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more    
+  
+- story: season_gram_harvest path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_gram_harvest
+  - action: utter_season_gram_harvest
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: season_gram_harvest path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_gram_harvest
+  - action: utter_season_gram_harvest
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more   
+  
+- story: season_gram_sow path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_gram_sow
+  - action: utter_season_gram_sow
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: season_gram_sow path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_gram_sow
+  - action: utter_season_gram_sow
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: season_lentil_sow path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_lentil_sow
+  - action: utter_season_lentil_sow
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: season_lentil_sow path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_lentil_sow
+  - action: utter_season_lentil_sow
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: season_lentil_harvest path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_lentil_harvest
+  - action: utter_season_lentil_harvest
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: season_lentil_harvest path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_lentil_harvest
+  - action: utter_season_lentil_harvest
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: season_rice_sow path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_rice_sow
+  - action: utter_season_rice_sow
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: season_rice_sow path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_rice_sow
+  - action: utter_season_rice_sow
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: season_rice_harvest path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_rice_harvest
+  - action: utter_season_rice_harvest
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: season_rice_harvest path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: season_rice_harvest
+  - action: utter_season_rice_harvest
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more   
+  
+- story: kotar_spot_turnip path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: kotar_spot_turnip
+  - action: utter_kotar_spot_turnip
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: kotar_spot_turnip path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: kotar_spot_turnip
+  - action: utter_kotar_spot_turnip
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: fert_acc_seed path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_acc_seed
+  - action: utter_fert_acc_seed
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: fert_acc_seed path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_acc_seed
+  - action: utter_fert_acc_seed
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more   
+  
+- story: fert_paddy path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_paddy
+  - action: utter_fert_paddy
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: fert_paddy path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_paddy
+  - action: utter_fert_paddy
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: fert_nitrogen path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_nitrogen
+  - action: utter_fert_nitrogen
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: fert_nitrogen path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_nitrogen
+  - action: utter_fert_nitrogen
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more 
+  
+- story: fert_phosphatic path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_phosphatic
+  - action: utter_fert_phosphatic
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: fert_phosphatic path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ffert_phosphatic
+  - action: utter_fert_phosphatic
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: preserve_soil path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: preserve_soil
+  - action: utter_preserve_soil
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: preserve_soil path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: preserve_soil
+  - action: utter_preserve_soil
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
+  
+- story: fert_touse path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_touse
+  - action: utter_fert_touse
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: fert_touse path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_touse
+  - action: utter_fert_touse
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more    
+  
+- story: fert_organic path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_organic
+  - action: utter_fert_organic
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: fert_organic path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_organic
+  - action: utter_fert_organic
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more   
+  
+- story: green_manure path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: green_manure
+  - action: utter_green_manure
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: green_manure path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: green_manure
+  - action: utter_green_manure
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more 
+
+- story: fert_rabi path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_rabi
+  - action: utter_fert_rabi
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: fert_rabi path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_rabi
+  - action: utter_fert_rabi
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more 
+
+- story: fert_lentil path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_lentil
+  - action: utter_fert_lentil
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: fert_lentil path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_lentil
+  - action: utter_fert_lentil
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: fert_rapeseed path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_rapeseed
+  - action: utter_fert_rapeseed
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: fert_rapeseed path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_rapeseed
+  - action: utter_fert_rapeseed
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: fert_summer_gram path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_summer_gram
+  - action: utter_fert_summer_gram
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: fert_summer_gram path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fert_summer_gram
+  - action: utter_fert_summer_gram
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+  

@@ -1,0 +1,257 @@
+version: "2.0"
+
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- bot_challenge
+- soil_wheat
+- soil_ginger
+- soil_potato
+- soil_cabbage
+- nutri_old_alluvial
+- eng_khadar_bhangar
+- soil_tea
+- char_khadar
+- char_bhangar
+- soil_red
+- soil_delta
+- def_soil_red
+- soil_clayey
+- soil_laterite
+- nutri_red_soil
+- condi_wheat
+- crop_bankura
+- fruit_bankura
+- veg_bankura
+- ginger_bengal
+- mustard_bengal
+- var_ginger
+- crop_sunderbans
+- crop_red_soil
+- crop_alipurduar
+- fruit_alipurduar
+- veg_alipurduar
+- aroma_alipurduar
+- jute_bengal
+- climate_jute
+- climate_wheat
+- dryland_rainfall
+- season_ginger
+- climate_potato
+- climate_tea
+- temp_tea
+- season_urd
+- season_gram
+- season_gram_harvest
+- season_gram_sow
+- season_lentil_sow
+- season_lentil_harvest
+- season_rice_sow
+- season_rice_harvest
+- kotar_spot_turnip
+- fert_acc_seed
+- fert_paddy
+- fert_nitrogen
+- fert_phosphatic
+- preserve_soil
+- fert_touse
+- fert_organic
+- green_manure
+- fert_rabi
+- fert_lentil
+- fert_rapeseed
+- fert_summer_gram
+
+responses:
+  utter_greet:
+  - text: "Hello! Welcome to Sample Agribot v1.0. Please state your query."
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa and working as Sample Agribot v1.0."
+  
+  utter_soil_wheat:
+  - text: "Soils with a clay loam or loam texture."
+  
+  utter_soil_ginger:
+  - text: "A friable loam rich in humus and well drained."
+  
+  utter_soil_potato:
+  - text: "Sandy loam and loamy soil rich in organic matter with good drainage and aeration."
+  
+  utter_soil_cabbage:
+  - text: "Sandy loam soil."
+  
+  utter_nutri_old_alluvial:
+  - text: "Potash, Lime and Phosphoric Acid."
+  
+  utter_eng_khadar_bhangar:
+  - text: "New Alluvial and Old Alluvial."
+  
+  utter_soil_tea:
+  - text: "Terai (plains of Darjeeling district) and Dooars (plains of Jalpaiguri and Alipurduar districts) regions."
+  
+  utter_char_khadar:
+  - text: "Sandy loam to clayey in texture,high humus content & water holding capacity, less acidic."
+  
+  utter_char_bhangar:
+  - text: "Clayey in texture, acidic, rich in potash and phosphorus, and has a moderate amount of nitrogen and humus."
+  
+  utter_soil_red:
+  - text: "Districts of Birbhum, Bardhaman, Bankura, Midnapore, some parts of Malda, and Dinajpur."
+  
+  utter_soil_delta:
+  - text: "Alluvial Soil"
+  
+  utter_def_soil_red:
+  - text: "low water holding capacity, defient in Nitrogen & phosphorus."
+  
+  utter_soil_clayey:
+  - text: "Sunderbans and in the coastal areas of the state."
+  
+  utter_soil_laterite:
+  - text: "In the Western plateau region, in the districts of Birbhum Bardhaman, Bankura, Purulia, Midnapore, some areas of Brain, and Madhupur forest areas."
+  
+  utter_nutri_red_soil:
+  - text: "Potash, Lime."
+
+  utter_condi_wheat:
+  - text: "Moderate temperature and moderate rainfall."
+  
+  utter_crop_bankura:
+  - text: "Rice, wheat, oilseeds and vegetables."
+  
+  utter_fruit_bankura:
+  - text: "Mango, banana, guava, papaya, citrus."
+  
+  utter_veg_bankura:
+  - text: "Eggplant, okra, cabbage, cauliflower, tomato."
+  
+  utter_ginger_bengal:
+  - text: "Gurubathan, Mali, Maran and Tura."
+  
+  utter_mustard_bengal:
+  - text: "Seeta (B85)"
+  
+  utter_var_ginger:
+  - text: "IISR Varada"
+  
+  utter_crop_sunderbans:
+  - text: "Coconut, Betel Nut and Watermelon."
+  
+  utter_crop_red_soil:
+  - text: "Paddy, wheat and Jute."
+  
+  utter_crop_alipurduar:
+  - text: "Paddy, Jute, wheat, maize, mustard, potato."
+  
+  utter_fruit_alipurduar:
+  - text: "Pineapple, banana, jackfruit."
+  
+  utter_veg_alipurduar:
+  - text: " Tomato, cabbage, eggplant, pumpkin."
+  
+  utter_aroma_alipurduar:
+  - text: "Turmeric, ginger, sarpogondha, black pepper."
+  
+  utter_jute_bengal:
+  - text: "Midnapur, Bardhaman, 24 Paraganas, Malda, Murshidabad."
+  
+  utter_climate_jute:
+  - text: "Hot and humid climate with occasional rainfall during pre-monsoon season in Terai Zone of West Bengal."
+  
+  utter_climate_wheat:
+  - text: "Temperatures ranging from 20 to 25 Celsius.  Areas with a warm and damp climate are not suited for wheat growing."
+  
+  utter_dryland_rainfall:
+  - text: "75 cms"
+  
+  utter_season_ginger:
+  - text: "During the first fortnight of May with the receipt of pre- monsoon showers."
+  
+  utter_climate_potato:
+  - text: "It is a cool-weather crop and grown at temperatures of 24℃ and tuber growth is good at 20°C."
+  
+  utter_climate_tea:
+  - text: "Hot and humid climate, high humidity, heavy dew and morning fog favour & 150-300 cm annual rainfall."
+  
+  utter_temp_tea:
+  - text: "Between 18 and 30 degrees celsius."
+  
+  utter_season_urd:
+  - text: "Early Kharif(March beg to March end) for sowing."
+  
+  utter_season_gram:
+  - text: "Rabi(Nov mid to Dec beg) or summer(March beg to July beg) for sowing and rabi(March beg to March end) for harvesting."
+  
+  utter_season_gram_harvest:
+  - text: "Kharif(Oct beg to Nov end) and summer(April beg to May end)."
+  
+  utter_season_gram_sow:
+  - text: "kharif(July beg to August end) and summer(Feb beg to March end)."
+  
+  utter_season_lentil_sow:
+  - text: "Rabi(Feb beg to May beg, November beg to November end) and summer(April beg to June beg)."
+  
+  utter_season_lentil_harvest:
+  - text: "Rabi(Feb beg to March end)."
+  
+  utter_season_rice_sow:
+  - text: "Kharif(June beg to September beg; Jan beg to Feb end)."
+  
+  utter_season_rice_harvest:
+  - text: "Kharif(Nov beg to Jan end)."
+  
+  utter_kotar_spot_turnip:
+  - text: "Calcium"
+  
+  utter_fert_acc_seed:
+  - text: "Phosphatic"
+  
+  utter_fert_paddy:
+  - text: "Azolla pinnata"
+  
+  utter_fert_nitrogen:
+  - text: "Urea"
+  
+  utter_fert_phosphatic:
+  - text: "Rama Phosphates"
+  
+  utter_preserve_soil:
+  - text: "Fertilisation, Crop rotation, Intercropping."
+  
+  utter_fert_touse:
+  - text: "Chemical fertilisers, Organic fertilisers."
+  
+  utter_fert_organic:
+  - text: "Livestock manure, Poultry manure, Green manure."
+  
+  utter_green_manure:
+  - text: "A quick growing crop cultivated and ploughed into the soil to increase its fertility."
+  
+  utter_fert_rabi:
+  - text: "Apply 5-ton FYM per ha at 10 days prior to sowing. Further, apply 174 kg urea, 375 kg SSP, 120 kg MOP and 25 kg ZnSO4 (Zinc Sulphate) ha-1 as basal."
+  
+  utter_fert_lentil:
+  - text: "For sole cropping, apply only 250 kg of SSP and 35 kg of MOP at the time of final land preparation (basal)."
+  
+  utter_fert_rapeseed:
+  - text: "Treat the seeds with Carbendazim (Bavistin) 50 WP (2 g kg-1 seed) at least 4 hours before sowing. Organic seed treatment with Trichoderma viridae @ 5 g kg-1 seed can be effective."
+
+  utter_fert_summer_gram:
+  - text: "Two-time spray with micro nutrient (Mo) @ 0.5 g/lit of water during flowering stage at 15 days interval."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
